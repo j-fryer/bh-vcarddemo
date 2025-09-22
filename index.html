@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Digital Business Card</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #f7f7f7;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 420px;
+      width: 100%;
+    }
+
+    .logo {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    .profile-pic {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      margin: 10px 0 5px;
+      font-size: 1.5rem;
+    }
+
+    p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 1rem;
+    }
+
+    .buttons {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      display: block;
+      padding: 12px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background: #D59E0F;
+      transition: background 0.3s;
+      font-size: 1rem;
+    }
+
+    .btn:hover {
+      background: #CB7358;
+    }
+
+    .qr-section {
+      margin-top: 30px;
+    }
+
+    .qr-section img {
+      width: 120px;
+      height: 120px;
+    }
+
+    @media (max-width: 600px) {
+      .card {
+        padding: 20px;
+      }
+
+      .btn {
+        font-size: 0.95rem;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <!-- Company Logo -->
+    <img src="imgs/logo.png" alt="Broughton Hive Logo" class="logo">
+
+    <!-- Profile Picture
+    <img src="profile.jpg" alt="Profile Picture" class="profile-pic"> -->
+
+    <!-- Contact Info -->
+    <h2>Charlotte Emery</h2>
+    <p>Broughton  Hive Manager</p>
+    <p>Broughton Hive</p>
+
+    <!-- Contact Buttons -->
+    <div class="buttons">
+      <a href="tel:+441756799608" class="btn">Call Me</a>
+      <a href="mailto:enquiries@broughtonhive.co.uk" class="btn">Email Me</a>
+      <a href="https://www.broughtonhive.co.uk" target="_blank" class="btn">Visit Website</a>
+      <a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="btn">LinkedIn</a>
+      <a href="vcf/charlotteemery.vcf" download class="btn">Save Contact</a>
+    </div>
+
+    <!-- QR Code Section -->
+    <div class="qr-section">
+      <p>Scan to save my contact:</p>
+      <img src="imgs/qr-emery.png" alt="QR Code">
+    </div>
+  </div>
+
+</body>
+</html>
